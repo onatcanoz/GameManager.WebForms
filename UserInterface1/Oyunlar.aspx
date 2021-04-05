@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <p>
     <br />
-    <asp:GridView ID="gvOyunlar" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical" AutoGenerateColumns="False" Width="1018px" OnSelectedIndexChanged="gvOyunlar_SelectedIndexChanged">
+    <asp:GridView ID="gvOyunlar" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical" AutoGenerateColumns="False" Width="1018px" OnSelectedIndexChanged="gvOyunlar_SelectedIndexChanged" ForeColor="Black">
         <AlternatingRowStyle BackColor="#DCDCDC" />
         <Columns>
             <asp:CommandField ButtonType="Button" SelectText="Seç" ShowSelectButton="True">

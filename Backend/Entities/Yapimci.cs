@@ -12,5 +12,6 @@ namespace Backend.Entities
         public string Adi { get; set; }
         public int UlkeId { get; set; }
         public virtual Ulke Ulke { get; set; }
+        public virtual List<Oyun> Oyunlar { get; set; }
     }
 }

@@ -55,8 +55,11 @@ namespace Backend.Services
         public void Delete(int id)
         {
             Yapimci entity = _db.Yapimcilar.Find(id);
-            _db.Yapimcilar.Remove(entity);
-            _db.SaveChanges();
+            if (entity.Oyunlar.Count == 0)
+            {
+                _db.Yapimcilar.Remove(entity);
+                _db.SaveChanges();
+            }
         }
     }
 }
